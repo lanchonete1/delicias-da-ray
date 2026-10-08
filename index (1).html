@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Delícias da Ray - Lanches, mini pizzas, açaí e cupuaçu.">
+  <title>Delícias da Ray | Lanches, Açaí e Mini Pizzas</title>
+  <style>
+    :root{
+      --roxo:#4b145f; --roxo2:#711b82; --amarelo:#ffd21a; --creme:#fffaf2;
+      --texto:#24152a; --verde:#25d366; --branco:#fff;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--creme);color:var(--texto)}
+    header{background:linear-gradient(135deg,var(--roxo),#23092e);color:#fff;padding:22px 16px 28px;position:sticky;top:0;z-index:10;box-shadow:0 3px 16px #0003}
+    .top{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:64px;height:64px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--roxo);font-weight:900;font-size:18px;border:4px solid var(--amarelo);overflow:hidden}
+    .logo img{width:100%;height:100%;object-fit:cover}
+    h1{font-size:24px;margin:0}.tag{margin:5px 0 0;color:#f6e7ff;font-size:13px}
+    nav{max-width:1100px;margin:18px auto 0;display:flex;gap:8px;overflow:auto;padding-bottom:2px}
+    nav a{white-space:nowrap;color:var(--roxo);background:var(--amarelo);padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:800;font-size:13px}
+    .hero{background:linear-gradient(135deg,#5d176e,#2a0b36);color:#fff;text-align:center;padding:42px 18px}
+    .hero h2{font-size:38px;margin:0 0 10px}.hero p{max-width:700px;margin:0 auto 20px;color:#f7eefe}
+    .cta{display:inline-block;background:var(--verde);color:#fff;text-decoration:none;font-weight:900;padding:14px 22px;border-radius:12px}
+    main{max-width:1100px;margin:auto;padding:34px 16px 60px}
+    section{scroll-margin-top:130px;margin-bottom:46px}
+    .section-title{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+    .section-title h2{margin:0;color:var(--roxo);font-size:30px}.line{height:4px;flex:1;background:var(--amarelo);border-radius:10px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 5px 20px #3a17421a;border:1px solid #eadfeb}
+    .photo{height:230px;background:linear-gradient(135deg,#eee,#ddd);display:flex;align-items:center;justify-content:center;color:#777;font-weight:800;text-align:center;padding:20px}
+    .photo img{width:100%;height:100%;object-fit:cover}
+    .content{padding:18px}.content h3{margin:0 0 8px;color:var(--roxo);font-size:22px}.desc{margin:0 0 14px;line-height:1.5;color:#5a4b5f;font-size:14px}
+    .price{font-size:22px;font-weight:900;color:#1c1420;margin-bottom:14px}
+    .order{display:block;text-align:center;background:var(--verde);color:#fff;text-decoration:none;padding:12px;border-radius:10px;font-weight:900}
+    .a{background:#fff}
+    .extras{background:linear-gradient(135deg,#f8e9fb,#fff);border:2px solid #e5c9ec;border-radius:18px;padding:20px}
+    .extras ul{columns:2;margin:0;padding-left:22px;line-height:1.9}
+    footer{background:#25092e;color:#fff;text-align:center;padding:30px 16px}
+    footer strong{color:var(--amarelo)}
+    @media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.hero h2{font-size:31px}}
+    @media(max-width:560px){.grid{grid-template-columns:1fr}.photo{height:260px}.top{align-items:flex-start}.logo{width:58px;height:58px}.extras ul{columns:1}.section-title h2{font-size:26px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="brand">
+      <div class="logo">RAY</div>
+      <div><h1>Delícias da Ray</h1><p class="tag">Sabor de verdade em cada pedido!</p></div>
+    </div>
+  </div>
+  <nav>
+    <a href="#lanches">🍔 Lanches</a><a href="#pizzas">🍕 Mini pizzas</a><a href="#acai">🍧 Açaí</a><a href="#extras">➕ Complementos</a><a href="#pedido">📱 Pedir</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Delícias da Ray</h2>
+  <p>Lanches caprichados, mini pizzas, açaí e cupuaçu preparados com carinho para você.</p>
+  <a class="cta" href="https://wa.me/5538999264571?text=Olá%20Delícias%20da%20Ray!%20Quero%20fazer%20um%20pedido." target="_blank">Pedir pelo WhatsApp</a>
+</div>
+
+<main>
+<section id="lanches">
+  <div class="section-title"><h2>🍔 Lanches</h2><div class="line"></div></div>
+  <div class="grid">
+    <article class="card"><div class="photo">FOTO DO TRADICIONAL</div><div class="content"><h3>Tradicional</h3><p class="desc">Pão, maionese, queijo e presunto.</p><div class="price">R$ 9,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20um%20Tradicional%20-%20R%24%209%2C00" target="_blank">Pedir este lanche</a></div></article>
+    <article class="card"><div class="photo">FOTO DO X-LIGHT</div><div class="content"><h3>X-Light</h3><p class="desc">Pão, maionese, milho, batata palha, queijo, presunto, alface e tomate.</p><div class="price">R$ 15,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20um%20X-Light%20-%20R%24%2015%2C00" target="_blank">Pedir este lanche</a></div></article>
+    <article class="card"><div class="photo">FOTO DO ZOIÃO</div><div class="content"><h3>Zoião</h3><p class="desc">Pão, maionese, hambúrguer, ovo, queijo, presunto, alface e tomate.</p><div class="price">R$ 17,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20um%20Zoi%C3%A3o%20-%20R%24%2017%2C00" target="_blank">Pedir este lanche</a></div></article>
+    <article class="card"><div class="photo">FOTO DO TOUCINHO</div><div class="content"><h3>Toucinho</h3><p class="desc">Pão, maionese, hambúrguer, bacon, queijo, presunto, alface e tomate.</p><div class="price">R$ 18,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20um%20Toucinho%20-%20R%24%2018%2C00" target="_blank">Pedir este lanche</a></div></article>
+    <article class="card"><div class="photo">FOTO DO X-CALABRESA</div><div class="content"><h3>X-Calabresa</h3><p class="desc">Pão, maionese, hambúrguer, calabresa, queijo, presunto, alface e tomate.</p><div class="price">R$ 18,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20um%20X-Calabresa%20-%20R%24%2018%2C00" target="_blank">Pedir este lanche</a></div></article>
+    <article class="card"><div class="photo">FOTO DO X-FRANGO</div><div class="content"><h3>X-Frango</h3><p class="desc">Pão, frango, milho, presunto, queijo, batata palha, maionese, alface e tomate.</p><div class="price">R$ 20,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20um%20X-Frango%20-%20R%24%2020%2C00" target="_blank">Pedir este lanche</a></div></article>
+    <article class="card"><div class="photo">FOTO DO DELÍCIAS</div><div class="content"><h3>Delícias</h3><p class="desc">Pão, maionese, hambúrguer, calabresa, bacon, ovo, milho, batata palha, queijo, presunto, alface e tomate.</p><div class="price">R$ 23,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20um%20Del%C3%ADcias%20-%20R%24%2023%2C00" target="_blank">Pedir este lanche</a></div></article>
+  </div>
+</section>
+
+<section id="pizzas">
+  <div class="section-title"><h2>🍕 Mini pizzas</h2><div class="line"></div></div>
+  <div class="grid">
+    <article class="card"><div class="photo">FOTO DA MINI PIZZA DE PRESUNTO</div><div class="content"><h3>Presunto</h3><p class="desc">Molho, presunto, queijo, azeitona, cebola e orégano.</p><div class="price">R$ 11,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20uma%20Mini%20Pizza%20de%20Presunto%20-%20R%24%2011%2C00" target="_blank">Pedir esta pizza</a></div></article>
+    <article class="card"><div class="photo">FOTO DA MINI PIZZA DE CALABRESA</div><div class="content"><h3>Calabresa</h3><p class="desc">Molho, queijo, calabresa, azeitona, cebola e orégano.</p><div class="price">R$ 12,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20uma%20Mini%20Pizza%20de%20Calabresa%20-%20R%24%2012%2C00" target="_blank">Pedir esta pizza</a></div></article>
+    <article class="card"><div class="photo">FOTO DA MINI PIZZA DE FRANGO</div><div class="content"><h3>Frango</h3><p class="desc">Molho, frango, queijo, azeitona, cebola e orégano.</p><div class="price">R$ 13,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20uma%20Mini%20Pizza%20de%20Frango%20-%20R%24%2013%2C00" target="_blank">Pedir esta pizza</a></div></article>
+  </div>
+</section>
+
+<section id="acai">
+  <div class="section-title"><h2>🍧 Açaí & Cupuaçu</h2><div class="line"></div></div>
+  <div class="grid">
+    <article class="card"><div class="photo">FOTO DO AÇAÍ PURO</div><div class="content"><h3>Açaí Puro</h3><p class="desc">Açaí puro, servido geladinho.</p><div class="price">300 ml R$ 13,00 · 500 ml R$ 15,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20A%C3%A7a%C3%AD%20Puro" target="_blank">Pedir este açaí</a></div></article>
+    <article class="card"><div class="photo">FOTO DO AÇAÍ TRUFADO</div><div class="content"><h3>Açaí Trufado</h3><p class="desc">Açaí, calda de chocolate e Bis.</p><div class="price">300 ml R$ 14,00 · 500 ml R$ 17,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20A%C3%A7a%C3%AD%20Trufado" target="_blank">Pedir este açaí</a></div></article>
+    <article class="card"><div class="photo">FOTO DO AÇAÍ TRADICIONAL</div><div class="content"><h3>Açaí Tradicional</h3><p class="desc">Açaí, banana, leite em pó e granola.</p><div class="price">300 ml R$ 14,00 · 500 ml R$ 17,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20A%C3%A7a%C3%AD%20Tradicional" target="_blank">Pedir este açaí</a></div></article>
+    <article class="card"><div class="photo">FOTO DO AÇAÍ CLÁSSICO</div><div class="content"><h3>Açaí Clássico</h3><p class="desc">Açaí, banana, leite condensado e leite em pó.</p><div class="price">300 ml R$ 14,00 · 500 ml R$ 17,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20A%C3%A7a%C3%AD%20Cl%C3%A1ssico" target="_blank">Pedir este açaí</a></div></article>
+    <article class="card"><div class="photo">FOTO DO AÇAÍ MINEIRO</div><div class="content"><h3>Açaí Mineiro</h3><p class="desc">Açaí, paçoca, mousse de maracujá e leite em pó.</p><div class="price">300 ml R$ 14,00 · 500 ml R$ 17,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20A%C3%A7a%C3%AD%20Mineiro" target="_blank">Pedir este açaí</a></div></article>
+    <article class="card"><div class="photo">FOTO DO CASADINHO TRUFADO</div><div class="content"><h3>Casadinho Trufado</h3><p class="desc">Açaí, cupuaçu, calda de chocolate e Bis.</p><div class="price">300 ml R$ 16,00 · 500 ml R$ 19,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20Casadinho%20Trufado" target="_blank">Pedir este açaí</a></div></article>
+    <article class="card"><div class="photo">FOTO DO CASADINHO TRADICIONAL</div><div class="content"><h3>Casadinho Tradicional</h3><p class="desc">Açaí, cupuaçu, banana, leite em pó e granola.</p><div class="price">300 ml R$ 16,00 · 500 ml R$ 19,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20Casadinho%20Tradicional" target="_blank">Pedir este açaí</a></div></article>
+    <article class="card"><div class="photo">FOTO DO CASADINHO CLÁSSICO</div><div class="content"><h3>Casadinho Clássico</h3><p class="desc">Açaí, cupuaçu, leite em pó, banana e leite condensado.</p><div class="price">300 ml R$ 16,00 · 500 ml R$ 19,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20Casadinho%20Cl%C3%A1ssico" target="_blank">Pedir este açaí</a></div></article>
+    <article class="card"><div class="photo">FOTO DO CASADINHO MINEIRO</div><div class="content"><h3>Casadinho Mineiro</h3><p class="desc">Açaí, cupuaçu, paçoca, leite em pó e mousse de maracujá.</p><div class="price">300 ml R$ 16,00 · 500 ml R$ 19,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20Casadinho%20Mineiro" target="_blank">Pedir este açaí</a></div></article>
+    <article class="card"><div class="photo">FOTO DO CUPUAÇU</div><div class="content"><h3>Cupuaçu</h3><p class="desc">Cupuaçu cremoso.</p><div class="price">300 ml R$ 14,00 · 500 ml R$ 16,00</div><a class="order" href="https://wa.me/5538999264571?text=Quero%20Cupua%C3%A7u" target="_blank">Pedir cupuaçu</a></div></article>
+  </div>
+</section>
+
+<section id="extras">
+  <div class="section-title"><h2>➕ Complementos</h2><div class="line"></div></div>
+  <div class="extras"><p><strong>R$ 3,00 cada</strong></p><ul>
+    <li>Mousse de limão</li><li>Banana</li><li>Leite em pó</li><li>Paçoca</li><li>Amendoim</li><li>Calda de chocolate</li><li>Mousse de maracujá</li><li>Mousse de morango</li><li>Mousse de banana</li><li>Granola</li><li>Leite condensado</li><li>Bis</li>
+  </ul></div>
+</section>
+
+<section id="pedido" style="text-align:center">
+  <div class="section-title"><h2>📱 Faça seu pedido</h2><div class="line"></div></div>
+  <p>Chame a Delícias da Ray pelo WhatsApp:</p>
+  <p style="font-size:28px;font-weight:900">(38) 99926-4571</p>
+  <a class="cta" href="https://wa.me/5538999264571?text=Olá%20Delícias%20da%20Ray!%20Quero%20fazer%20um%20pedido." target="_blank">Abrir WhatsApp</a>
+</section>
+</main>
+
+<footer><strong>Delícias da Ray</strong><br><span>Seu lanche, seu açaí, sua escolha.</span></footer>
+</body>
+</html>
